@@ -5,14 +5,15 @@
 }
 
 header {
+  width: 100%;
   height: 50px;
   background-color: #ff9a4b;
 }
 
 main {
-  width: 960px;
+  width: 100%;
   margin: 50px auto;
-  display:inline-block;
+  display: flex;
 }
 
 .step-box {
@@ -23,8 +24,9 @@ main {
   background-color: #eeeeee;
 }
 
-.step-box:last-child {
-  margin-right: 0;
+.contents {
+  margin: auto;
+  display: flex;
 }
 
 .step-img1 {
@@ -62,36 +64,34 @@ main {
 }
 
 footer {
+  width: 100%;
   height: 50px;
   background-color: #aaa;
 }
 
-
-
-
 @media screen and (max-width: 768px) {
-  header {
-    width: 100%;
+  main {
+    display: block;
   }
 
-.step-box {
-  width: 90%%;
-  margin-left: 40px;
-  margin-bottom: 20px;
-}
+  .step-box {
+    margin: 20px auto;
+    width: 90%;
+  }
 
-.step-img1 {
-  height: 150px;
-}
+  .contents {
+    display: block;
+  }
 
-.step-img2 {
-  height: 150px;
-}
+  .step-img1 {
+    height: 150px;
+  }
 
-.step-img3 {
-  height: 150px;
-}
+  .step-img2 {
+    height: 150px;
+  }
 
-footer {
-  width: 100%;
+  .step-img3 {
+    height: 150px;
+  }
 }
